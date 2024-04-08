@@ -2,36 +2,175 @@
   margin: 0;
   padding: 0;
 }
+
 .container {
   background-color: rgba(255, 254, 254, 1);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .logo {
   padding: 20px;
 }
+
 #menu a {
   padding: 20px;
 }
 
 .sessao_1 {
-  background-color: rgba(232, 243, 227, 1);
+  background-color: #E8F3E3;
+
   display: flex;
   align-items: center;
   justify-content: space-around;
+  align-content: center;
 }
+
 .imagem img {
-  width: 463px;
-  height: 615px;
+  width: 300px;
   padding: 52px 170px 30px 215px;
+}
+
+.texto {
+  font-family: "Parisienne", cursive;
 }
 
 .texto h1 {
   font-size: 64px;
   align-items: center;
 }
+
 .texto p {
   font-size: 32px;
   align-content: center;
+}
+
+#call_to_action {
+  width: 211px;
+  height: 50px;
+  top: 548px;
+  left: 927px;
+  gap: 0px;
+  border-radius: 8px 0px 0px 0px;
+  opacity: 0px;
+  background-color: #F8D456;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 21.72px;
+  text-align: center;
+  color: #156039;
+}
+
+.barra_verde div {
+  display: flex;
+  background-color: #156039;
+  align-items: center;
+  justify-content: space-around;
+  height: 108px;
+  top: 786px;
+}
+
+.barra_verde p {
+  padding: 20px;
+  font-family: Kaisei Tokumin;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.27px;
+  color: #ffffff;
+}
+
+.flex_cards {
+  background-color: #E8F3E3;
+}
+
+.flex_cards h4 {
+  font-family: Kaisei Tokumin;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34.75px;
+  color: #156039;
+  text-align: center;
+  padding: 25px;
+}
+
+.flex_cards h4 a {
+  font-family: Kaisei Tokumin;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34.75px;
+  color: #156039;
+
+}
+
+.container_cards {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 15px;
+}
+
+.texto {
+
+  font-family: Kaisei Tokumin;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34.75px;
+  text-align: center;
+  color: #156039;
+}
+
+.sub_texto {
+  font-family: Kaisei Tokumin;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.27px;
+  text-align: center;
+  color: #156039;
+}
+
+.sessao_3 {
+  display: flex;
+  align-items: center;
+
+}
+
+.sessao_3 img {
+  width: 720px;
+  height: 675px;
+  top: 1651px;
+  gap: 0px;
+  opacity: 0px;
+
+}
+
+.sessao_3 .imagem img {
+  padding: 0;
+
+
+
+
+}
+
+.img_texto {
+  background-color: #B9B899;
+  width: 720px;
+  height: 675px;
+  top: 1651px;
+  left: 720px;
+  gap: 0px;
+  opacity: 0px;
+
+
+
+}
+
+.sessao_3 .img_texto img {
+  width: 230px;
+  height: 136px;
+  top: 1785px;
+  left: 961px;
+  gap: 0px;
+  opacity: 0px;
+
 }
