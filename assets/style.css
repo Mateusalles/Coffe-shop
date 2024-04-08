@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: rgba(255, 254, 254, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  padding: 20px;
+}
+#menu a {
+  padding: 20px;
+}
+
+.sessao_1 {
+  background-color: rgba(232, 243, 227, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.imagem img {
+  width: 463px;
+  height: 615px;
+  padding: 52px 170px 30px 215px;
+}
+
+.texto h1 {
+  font-size: 64px;
+  align-items: center;
+}
+.texto p {
+  font-size: 32px;
+  align-content: center;
+}
