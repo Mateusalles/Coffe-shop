@@ -66,13 +66,14 @@ Body {
 #call_to_action {
   width: 250px;
   height: 50px;
-  border-radius: 8px 8px 8px 8px;
+  border-radius: 8px;
   background-color: #f8d456;
   font-size: 20px;
   font-weight: 700;
   line-height: 21.72px;
   text-align: center;
   color: #156039;
+  border: none;
 }
 
 .barra_verde div {
@@ -141,6 +142,8 @@ Body {
 }
 
 .sessao_3 {
+  margin: 0;
+  padding: 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -153,17 +156,1197 @@ Body {
 }
 
 .foto-direita {
+  justify-content: center;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   background-color: #b9b899;
-  width: 100%;
-}
-.foto-direita img {
   width: 50%;
 }
 
+.foto-direita img {
+  width: 30%;
+}
+
+.texto-direita h3 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 46.34px;
+  text-align: center;
+}
+
+.texto-direita p {
+  width: 393px;
+  height: 120px;
+  padding-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.27px;
+  text-align: center;
+}
+
+.sessao_3 .foto-direita button {
+  width: 211px;
+  height: 50px;
+  border: none;
+  margin-top: 30px;
+  border-radius: 8px;
+  background-color: rgba(248, 212, 86, 1);
+  color: rgba(21, 96, 57, 1);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 21.72px;
+  text-align: center;
+}
 .footer h2 {
+  font-size: 78px;
+  font-weight: 400;
+  line-height: 78px;
+  text-align: center;
   justify-content: center;
+}
+
+.footer {
+  background-color: rgba(232, 243, 227, 1);
+  padding-bottom: 35px;
+}
+.footer_cards {
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  gap: 20px;
+}
+.footer_cards .titulo-card-footer {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 57.92px;
+  color: rgba(21, 96, 57, 1);
+}
+
+.footer_cards p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.27px;
+  color: rgba(21, 96, 57, 1);
+}
+
+.footer_cards hr {
+  width: 60%;
+  border: 2px solid rgba(21, 96, 57, 1);
+}
+
+/* USAR NORMALMENTE ATE MAX-WIDTH: 1599PX
+      A PARTIR DESSA MEDIDA TODO CONTEUDO SERA CENTRALIZADO*/
+@media (max-width: 319px) {
+  /* CSS para a media query @media (max-width: 319px) */
+
+  /* Reset de margens e preenchimentos */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Estilos para a fonte Poppins em peso regular e bold */
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  /* Estilos gerais para o corpo do documento */
+  body {
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  /* Estilos para o cabeçalho */
+  .container {
+    width: 100%;
+    height: auto; /* Ajuste para altura automática */
+    background-color: rgba(255, 254, 254, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    padding: 10px; /* Redução do preenchimento */
+    margin-left: 10px; /* Redução da margem esquerda */
+  }
+
+  #menu a {
+    text-decoration: none;
+    padding: 10px; /* Redução do preenchimento */
+    font-size: 16px; /* Redução do tamanho da fonte */
+  }
+
+  /* Estilos para a primeira sessão */
+  .sessao_1 {
+    background-color: #e8f3e3;
+    display: flex;
+    flex-direction: column; /* Mudança para coluna em telas menores */
+    align-items: center;
+  }
+
+  .imagem img {
+    width: 100%; /* Imagem ocupando 100% da largura */
+    padding: 10px; /* Redução do preenchimento */
+  }
+
+  .texto h1 {
+    font-size: 32px; /* Redução do tamanho da fonte */
+    padding-bottom: 20px; /* Redução do preenchimento inferior */
+  }
+
+  .texto p {
+    font-size: 24px; /* Redução do tamanho da fonte */
+    padding-bottom: 20px; /* Redução do preenchimento inferior */
+    line-height: 32px; /* Redução da altura da linha */
+  }
+
+  #call_to_action {
+    width: 200px; /* Redução da largura do botão */
+    height: 40px; /* Redução da altura do botão */
+    font-size: 14px; /* Redução do tamanho da fonte */
+    line-height: 16px; /* Redução da altura da linha */
+  }
+
+  /* Estilos para a barra verde */
+  .barra_verde div {
+    display: flex;
+    flex-direction: column; /* Mudança para coluna em telas menores */
+    background-color: #156039;
+    align-items: center;
+    justify-content: center;
+    height: auto; /* Ajuste para altura automática */
+  }
+
+  .barra_verde p {
+    padding: 10px; /* Redução do preenchimento */
+    font-size: 16px; /* Redução do tamanho da fonte */
+  }
+
+  /* Estilos para os cartões flexíveis */
+  .flex_cards {
+    background-color: #e8f3e3;
+  }
+
+  .flex_cards h4 {
+    font-size: 24px; /* Redução do tamanho da fonte */
+    padding: 15px; /* Redução do preenchimento */
+  }
+
+  .flex_cards h4 a {
+    font-size: 20px; /* Redução do tamanho da fonte */
+  }
+
+  .container_cards {
+    display: flex;
+    flex-wrap: wrap; /* Quebra de linha para os cartões */
+    justify-content: center;
+    padding: 10px; /* Redução do preenchimento */
+    gap: 10px; /* Redução do espaço entre os cartões */
+  }
+
+  .container_cards img {
+    width: 100%; /* Imagem ocupando 100% da largura */
+    height: auto; /* Ajuste para altura automática */
+  }
+
+  .texto {
+    font-size: 14px; /* Redução do tamanho da fonte */
+    line-height: 20px; /* Redução da altura da linha */
+  }
+
+  .sub_texto {
+    font-size: 12px; /* Redução do tamanho da fonte */
+  }
+
+  /* Estilos para a terceira sessão */
+  .sessao_3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Mudança para coluna em telas menores */
+    align-items: center;
+  }
+
+  .imagem-esquerda {
+    width: 100%; /* Imagem ocupando 100% da largura */
+  }
+
+  .imagem-esquerda img {
+    width: 100%; /* Imagem ocupando 100% da largura */
+  }
+
+  .foto-direita {
+    width: 100%; /* Largura total */
+    background-color: #b9b899;
+  }
+
+  .foto-direita img {
+    width: 20%; /* Redução do tamanho da imagem */
+  }
+
+  .texto-direita h3 {
+    font-size: 24px; /* Redução do tamanho da fonte */
+    line-height: 32px; /* Redução da altura da linha */
+  }
+
+  .texto-direita p {
+    width: 100%; /* Largura total */
+    padding-top: 10px; /* Redução do preenchimento superior */
+    font-size: 12px; /* Redução do tamanho da fonte */
+    line-height: 16px; /* Redução da altura da linha */
+  }
+
+  .sessao_3 .foto-direita button {
+    width: 150px; /* Redução da largura do botão */
+    height: 30px; /* Redução da altura do botão */
+    margin-top: 20px; /* Redução da margem superior */
+    font-size: 12px; /* Redução do tamanho da fonte */
+    line-height: 16px; /* Redução da altura da linha */
+  }
+
+  /* Estilos para o rodapé */
+  .footer h2 {
+    font-size: 32px; /* Redução do tamanho da fonte */
+    line-height: 32px; /* Redução da altura da linha */
+  }
+
+  .footer {
+    background-color: rgba(232, 243, 227, 1);
+    padding-bottom: 20px; /* Redução do preenchimento inferior */
+  }
+
+  .footer_cards {
+    display: flex;
+    flex-wrap: wrap; /* Quebra de linha para os cartões */
+    padding-top: 10px; /* Redução do preenchimento superior */
+    justify-content: center;
+    gap: 10px; /* Redução do espaço entre os cartões */
+  }
+
+  .footer_cards .titulo-card-footer {
+    font-size: 20px; /* Redução do tamanho da fonte */
+    line-height: 24px; /* Redução da altura da linha */
+  }
+
+  .footer_cards p {
+    font-size: 12px; /* Redução do tamanho da fonte */
+    line-height: 16px; /* Redução da altura da linha */
+  }
+
+  .footer_cards hr {
+    width: 50%; /* Redução da largura da linha */
+  }
+}
+
+@media (min-width: 320px) and (max-width: 833px) {
+  /* CSS para a media query @media (min-width: 320px) and (max-width: 833px) */
+
+  /* Reset de margens e preenchimentos */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Estilos para a fonte Poppins em peso regular e bold */
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  /* Estilos gerais para o corpo do documento */
+  body {
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  /* Estilos para o cabeçalho */
+  .container {
+    width: 100%;
+    height: auto; /* Ajuste para altura automática */
+    background-color: rgba(255, 254, 254, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    padding: 10px; /* Redução do preenchimento */
+    margin-left: 10px; /* Redução da margem esquerda */
+  }
+
+  #menu a {
+    text-decoration: none;
+    padding: 10px; /* Redução do preenchimento */
+    font-size: 16px; /* Redução do tamanho da fonte */
+  }
+
+  /* Estilos para a primeira sessão */
+  .sessao_1 {
+    background-color: #e8f3e3;
+    display: flex;
+    flex-direction: column; /* Mudança para coluna em telas menores */
+    align-items: center;
+  }
+
+  .imagem img {
+    width: 100%; /* Imagem ocupando 100% da largura */
+    padding: 10px; /* Redução do preenchimento */
+  }
+
+  .texto h1 {
+    font-size: 32px; /* Redução do tamanho da fonte */
+    padding-bottom: 20px; /* Redução do preenchimento inferior */
+  }
+
+  .texto p {
+    font-size: 24px; /* Redução do tamanho da fonte */
+    padding-bottom: 20px; /* Redução do preenchimento inferior */
+    line-height: 32px; /* Redução da altura da linha */
+  }
+
+  #call_to_action {
+    width: 200px; /* Redução da largura do botão */
+    height: 40px; /* Redução da altura do botão */
+    font-size: 14px; /* Redução do tamanho da fonte */
+    line-height: 16px; /* Redução da altura da linha */
+  }
+
+  /* Estilos para a barra verde */
+  .barra_verde div {
+    display: flex;
+    flex-direction: column; /* Mudança para coluna em telas menores */
+    background-color: #156039;
+    align-items: center;
+    justify-content: center;
+    height: auto; /* Ajuste para altura automática */
+  }
+
+  .barra_verde p {
+    padding: 10px; /* Redução do preenchimento */
+    font-size: 16px; /* Redução do tamanho da fonte */
+  }
+
+  /* Estilos para os cartões flexíveis */
+  .flex_cards {
+    background-color: #e8f3e3;
+  }
+
+  .flex_cards h4 {
+    font-size: 24px; /* Redução do tamanho da fonte */
+    padding: 15px; /* Redução do preenchimento */
+  }
+
+  .flex_cards h4 a {
+    font-size: 20px; /* Redução do tamanho da fonte */
+  }
+
+  .container_cards {
+    display: flex;
+    flex-wrap: wrap; /* Quebra de linha para os cartões */
+    justify-content: center;
+    padding: 10px; /* Redução do preenchimento */
+    gap: 10px; /* Redução do espaço entre os cartões */
+  }
+
+  .container_cards img {
+    width: 100%; /* Imagem ocupando 100% da largura */
+    height: auto; /* Ajuste para altura automática */
+  }
+
+  .texto {
+    font-size: 14px; /* Redução do tamanho da fonte */
+    line-height: 20px; /* Redução da altura da linha */
+  }
+
+  .sub_texto {
+    font-size: 12px; /* Redução do tamanho da fonte */
+  }
+
+  /* Estilos para a terceira sessão */
+  .sessao_3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Mudança para coluna em telas menores */
+    align-items: center;
+  }
+
+  .imagem-esquerda {
+    width: 100%; /* Imagem ocupando 100% da largura */
+  }
+
+  .imagem-esquerda img {
+    width: 100%; /* Imagem ocupando 100% da largura */
+  }
+
+  .foto-direita {
+    width: 100%; /* Largura total */
+    background-color: #b9b899;
+  }
+
+  .foto-direita img {
+    width: 20%; /* Redução do tamanho da imagem */
+  }
+
+  .texto-direita h3 {
+    font-size: 24px; /* Redução do tamanho da fonte */
+    line-height: 32px; /* Redução da altura da linha */
+  }
+
+  .texto-direita p {
+    width: 100%; /* Largura total */
+    padding-top: 10px; /* Redução do preenchimento superior */
+    font-size: 12px; /* Redução do tamanho da fonte */
+    line-height: 16px; /* Redução da altura da linha */
+  }
+
+  .sessao_3 .foto-direita button {
+    width: 150px; /* Redução da largura do botão */
+    height: 30px; /* Redução da altura do botão */
+    margin-top: 20px; /* Redução da margem superior */
+    font-size: 12px; /* Redução do tamanho da fonte */
+    line-height: 16px; /* Redução da altura da linha */
+  }
+
+  /* Estilos para o rodapé */
+  .footer h2 {
+    font-size: 32px; /* Redução do tamanho da fonte */
+    line-height: 32px; /* Redução da altura da linha */
+  }
+
+  .footer {
+    background-color: rgba(232, 243, 227, 1);
+    padding-bottom: 20px; /* Redução do preenchimento inferior */
+  }
+
+  .footer_cards {
+    display: flex;
+    flex-wrap: wrap; /* Quebra de linha para os cartões */
+    padding-top: 10px; /* Redução do preenchimento superior */
+    justify-content: center;
+    gap: 10px; /* Redução do espaço entre os cartões */
+  }
+
+  .footer_cards .titulo-card-footer {
+    font-size: 20px; /* Redução do tamanho da fonte */
+    line-height: 24px; /* Redução da altura da linha */
+  }
+
+  .footer_cards p {
+    font-size: 12px; /* Redução do tamanho da fonte */
+    line-height: 16px; /* Redução da altura da linha */
+  }
+
+  .footer_cards hr {
+    width: 50%; /* Redução da largura da linha */
+  }
+  @media (min-width: 834px) and (max-width: 1365px) {
+    /* CSS para a media query @media (min-width: 834px) and (max-width: 1365px) */
+
+    /* Reset de margens e preenchimentos */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilos para a fonte Poppins em peso regular e bold */
+    .poppins-regular {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .poppins-bold {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* Estilos gerais para o corpo do documento */
+    body {
+      width: 100%;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    /* Estilos para o cabeçalho */
+    .container {
+      width: 100%;
+      height: auto; /* Ajuste para altura automática */
+      background-color: rgba(255, 254, 254, 1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      padding: 20px; /* Ajuste do preenchimento */
+      margin-left: 20px; /* Ajuste da margem esquerda */
+    }
+
+    #menu a {
+      text-decoration: none;
+      padding: 20px; /* Ajuste do preenchimento */
+      font-size: 24px; /* Ajuste do tamanho da fonte */
+    }
+
+    /* Estilos para a primeira sessão */
+    .sessao_1 {
+      background-color: #e8f3e3;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .imagem img {
+      width: 580px;
+      padding: 52px 170px 30px 215px;
+    }
+
+    .texto h1 {
+      font-size: 68px;
+      padding-bottom: 70px;
+    }
+
+    .texto p {
+      font-size: 46px;
+      padding-bottom: 36px;
+      line-height: 60px;
+    }
+
+    #call_to_action {
+      width: 250px;
+      height: 50px;
+      border-radius: 8px;
+      background-color: #f8d456;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 21.72px;
+      text-align: center;
+      color: #156039;
+      border: none;
+    }
+
+    /* Estilos para a barra verde */
+    .barra_verde div {
+      display: flex;
+      background-color: #156039;
+      align-items: center;
+      justify-content: space-around;
+      height: 108px;
+    }
+
+    .barra_verde p {
+      padding: 20px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 20.27px;
+      color: #ffffff;
+    }
+
+    /* Estilos para os cartões flexíveis */
+    .flex_cards {
+      background-color: #e8f3e3;
+    }
+
+    .flex_cards h4 {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 35px;
+      color: #156039;
+      text-align: center;
+      padding: 25px;
+    }
+
+    .flex_cards h4 a {
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 35px;
+      color: #156039;
+    }
+
+    .container_cards {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      gap: 15px;
+    }
+
+    .container_cards img {
+      width: 269px;
+      height: 410px;
+    }
+
+    .texto {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 34.75px;
+      text-align: center;
+      color: #156039;
+    }
+
+    .sub_texto {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20.27px;
+      text-align: center;
+      color: #156039;
+    }
+
+    /* Estilos para a terceira sessão */
+    .sessao_3 {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .imagem-esquerda {
+      width: 50%;
+    }
+
+    .imagem-esquerda img {
+      width: 100%;
+    }
+
+    .foto-direita {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: #b9b899;
+      width: 50%;
+    }
+
+    .foto-direita img {
+      width: 30%;
+    }
+
+    .texto-direita h3 {
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 46.34px;
+      text-align: center;
+    }
+
+    .texto-direita p {
+      width: 393px;
+      height: 120px;
+      padding-top: 20px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20.27px;
+      text-align: center;
+    }
+
+    .sessao_3 .foto-direita button {
+      width: 211px;
+      height: 50px;
+      border: none;
+      margin-top: 30px;
+      border-radius: 8px;
+      background-color: rgba(248, 212, 86, 1);
+      color: rgba(21, 96, 57, 1);
+      font-size: 15px;
+      font-weight: 800;
+      line-height: 21.72px;
+      text-align: center;
+    }
+
+    /* Estilos para o rodapé */
+    .footer h2 {
+      font-size: 78px;
+      font-weight: 400;
+      line-height: 78px;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .footer {
+      background-color: rgba(232, 243, 227, 1);
+      padding-bottom: 35px;
+    }
+
+    .footer_cards {
+      display: flex;
+      padding-top: 20px;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .footer_cards .titulo-card-footer {
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 57.92px;
+      color: rgba(21, 96, 57, 1);
+    }
+
+    .footer_cards p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20.27px;
+      color: rgba(21, 96, 57, 1);
+    }
+
+    .footer_cards hr {
+      width: 60%;
+      border: 2px solid rgba(21, 96, 57, 1);
+    }
+  }
+
+  @media (min-width: 1366px) and (max-width: 1599px) {
+    /* CSS para a media query @media (min-width: 1366px) and (max-width: 1599px) */
+
+    /* Reset de margens e preenchimentos */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilos para a fonte Poppins em peso regular e bold */
+    .poppins-regular {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .poppins-bold {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* Estilos gerais para o corpo do documento */
+    body {
+      width: 100%;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    /* Estilos para o cabeçalho */
+    .container {
+      width: 100%;
+      height: auto; /* Ajuste para altura automática */
+      background-color: rgba(255, 254, 254, 1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      padding: 30px; /* Ajuste do preenchimento */
+      margin-left: 30px; /* Ajuste da margem esquerda */
+    }
+
+    #menu a {
+      text-decoration: none;
+      padding: 30px; /* Ajuste do preenchimento */
+      font-size: 28px; /* Ajuste do tamanho da fonte */
+    }
+
+    /* Estilos para a primeira sessão */
+    .sessao_1 {
+      background-color: #e8f3e3;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .imagem img {
+      width: 600px; /* Ajuste da largura da imagem */
+      padding: 50px 180px 30px 230px; /* Ajuste do preenchimento */
+    }
+
+    .texto h1 {
+      font-size: 72px; /* Ajuste do tamanho da fonte */
+      padding-bottom: 80px; /* Ajuste do preenchimento inferior */
+    }
+
+    .texto p {
+      font-size: 50px; /* Ajuste do tamanho da fonte */
+      padding-bottom: 40px; /* Ajuste do preenchimento inferior */
+      line-height: 64px; /* Ajuste da altura da linha */
+    }
+
+    #call_to_action {
+      width: 270px; /* Ajuste da largura do botão */
+      height: 60px; /* Ajuste da altura do botão */
+      font-size: 24px; /* Ajuste do tamanho da fonte */
+      line-height: 28px; /* Ajuste da altura da linha */
+    }
+
+    /* Estilos para a barra verde */
+    .barra_verde div {
+      display: flex;
+      background-color: #156039;
+      align-items: center;
+      justify-content: space-around;
+      height: 120px; /* Ajuste da altura da barra */
+    }
+
+    .barra_verde p {
+      padding: 30px; /* Ajuste do preenchimento */
+      font-size: 24px; /* Ajuste do tamanho da fonte */
+    }
+
+    /* Estilos para os cartões flexíveis */
+    .flex_cards {
+      background-color: #e8f3e3;
+    }
+
+    .flex_cards h4 {
+      font-size: 36px; /* Ajuste do tamanho da fonte */
+      padding: 35px; /* Ajuste do preenchimento */
+    }
+
+    .flex_cards h4 a {
+      font-size: 32px; /* Ajuste do tamanho da fonte */
+    }
+
+    .container_cards {
+      display: flex;
+      justify-content: center;
+      padding: 30px; /* Ajuste do preenchimento */
+      gap: 20px; /* Ajuste do espaço entre os cartões */
+    }
+
+    .container_cards img {
+      width: 300px; /* Ajuste da largura da imagem */
+      height: 460px; /* Ajuste da altura da imagem */
+    }
+
+    .texto {
+      font-size: 22px; /* Ajuste do tamanho da fonte */
+      font-weight: 600;
+      line-height: 40px; /* Ajuste da altura da linha */
+      text-align: center;
+      color: #156039;
+    }
+
+    .sub_texto {
+      font-size: 20px; /* Ajuste do tamanho da fonte */
+    }
+
+    /* Estilos para a terceira sessão */
+    .sessao_3 {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .imagem-esquerda {
+      width: 50%;
+    }
+
+    .imagem-esquerda img {
+      width: 100%;
+    }
+
+    .foto-direita {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: #b9b899;
+      width: 50%;
+    }
+
+    .foto-direita img {
+      width: 35%; /* Ajuste do tamanho da imagem */
+    }
+
+    .texto-direita h3 {
+      font-size: 36px; /* Ajuste do tamanho da fonte */
+      line-height: 52px; /* Ajuste da altura da linha */
+      text-align: center;
+    }
+
+    .texto-direita p {
+      width: 400px; /* Ajuste da largura do parágrafo */
+      height: 140px; /* Ajuste da altura do parágrafo */
+      padding-top: 30px; /* Ajuste do preenchimento superior */
+      font-size: 18px; /* Ajuste do tamanho da fonte */
+      line-height: 28px; /* Ajuste da altura da linha */
+      text-align: center;
+    }
+
+    .sessao_3 .foto-direita button {
+      width: 250px; /* Ajuste da largura do botão */
+      height: 60px; /* Ajuste da altura do botão */
+      margin-top: 40px; /* Ajuste da margem superior */
+      font-size: 20px; /* Ajuste do tamanho da fonte */
+      line-height: 28px; /* Ajuste da altura da linha */
+    }
+
+    /* Estilos para o rodapé */
+    .footer h2 {
+      font-size: 90px; /* Ajuste do tamanho da fonte */
+      line-height: 90px; /* Ajuste da altura da linha */
+      text-align: center;
+    }
+
+    .footer {
+      background-color: rgba(232, 243, 227, 1);
+      padding-bottom: 40px; /* Ajuste do preenchimento inferior */
+    }
+
+    .footer_cards {
+      display: flex;
+      padding-top: 30px; /* Ajuste do preenchimento superior */
+      justify-content: center;
+      gap: 30px; /* Ajuste do espaço entre os cartões */
+    }
+
+    .footer_cards .titulo-card-footer {
+      font-size: 50px; /* Ajuste do tamanho da fonte */
+      line-height: 72px; /* Ajuste da altura da linha */
+    }
+
+    .footer_cards p {
+      font-size: 18px; /* Ajuste do tamanho da fonte */
+      line-height: 28px; /* Ajuste da altura da linha */
+    }
+
+    .footer_cards hr {
+      width: 70%; /* Ajuste da largura da linha */
+    }
+  }
+
+  @media (min-width: 1600px) and (max-width: 1920px) {
+    /* CSS para a media query @media (min-width: 1600px) and (max-width: 1920px) */
+
+    /* Reset de margens e preenchimentos */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilos para a fonte Poppins em peso regular e bold */
+    .poppins-regular {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .poppins-bold {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    /* Estilos gerais para o corpo do documento */
+    body {
+      width: 100%;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    /* Estilos para o cabeçalho */
+    .container {
+      width: 100%;
+      height: auto; /* Ajuste para altura automática */
+      background-color: rgba(255, 254, 254, 1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      padding: 40px; /* Ajuste do preenchimento */
+      margin-left: 40px; /* Ajuste da margem esquerda */
+    }
+
+    #menu a {
+      text-decoration: none;
+      padding: 40px; /* Ajuste do preenchimento */
+      font-size: 32px; /* Ajuste do tamanho da fonte */
+    }
+
+    /* Estilos para a primeira sessão */
+    .sessao_1 {
+      background-color: #e8f3e3;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .imagem img {
+      width: 620px; /* Ajuste da largura da imagem */
+      padding: 60px 200px 30px 250px; /* Ajuste do preenchimento */
+    }
+
+    .texto h1 {
+      font-size: 80px; /* Ajuste do tamanho da fonte */
+      padding-bottom: 90px; /* Ajuste do preenchimento inferior */
+    }
+
+    .texto p {
+      font-size: 54px; /* Ajuste do tamanho da fonte */
+      padding-bottom: 50px; /* Ajuste do preenchimento inferior */
+      line-height: 68px; /* Ajuste da altura da linha */
+    }
+
+    #call_to_action {
+      width: 290px; /* Ajuste da largura do botão */
+      height: 70px; /* Ajuste da altura do botão */
+      font-size: 28px; /* Ajuste do tamanho da fonte */
+      line-height: 32px; /* Ajuste da altura da linha */
+    }
+
+    /* Estilos para a barra verde */
+    .barra_verde div {
+      display: flex;
+      background-color: #156039;
+      align-items: center;
+      justify-content: space-around;
+      height: 130px; /* Ajuste da altura da barra */
+    }
+
+    .barra_verde p {
+      padding: 40px; /* Ajuste do preenchimento */
+      font-size: 28px; /* Ajuste do tamanho da fonte */
+    }
+
+    /* Estilos para os cartões flexíveis */
+    .flex_cards {
+      background-color: #e8f3e3;
+    }
+
+    .flex_cards h4 {
+      font-size: 40px; /* Ajuste do tamanho da fonte */
+      padding: 45px; /* Ajuste do preenchimento */
+    }
+
+    .flex_cards h4 a {
+      font-size: 36px; /* Ajuste do tamanho da fonte */
+    }
+
+    .container_cards {
+      display: flex;
+      justify-content: center;
+      padding: 40px; /* Ajuste do preenchimento */
+      gap: 25px; /* Ajuste do espaço entre os cartões */
+    }
+
+    .container_cards img {
+      width: 320px; /* Ajuste da largura da imagem */
+      height: 480px; /* Ajuste da altura da imagem */
+    }
+
+    .texto {
+      font-size: 24px; /* Ajuste do tamanho da fonte */
+      font-weight: 600;
+      line-height: 44px; /* Ajuste da altura da linha */
+      text-align: center;
+      color: #156039;
+    }
+
+    .sub_texto {
+      font-size: 22px; /* Ajuste do tamanho da fonte */
+    }
+
+    /* Estilos para a terceira sessão */
+    .sessao_3 {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .imagem-esquerda {
+      width: 50%;
+    }
+
+    .imagem-esquerda img {
+      width: 100%;
+    }
+
+    .foto-direita {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: #b9b899;
+      width: 50%;
+    }
+
+    .foto-direita img {
+      width: 40%; /* Ajuste do tamanho da imagem */
+    }
+
+    .texto-direita h3 {
+      font-size: 40px; /* Ajuste do tamanho da fonte */
+      line-height: 58px; /* Ajuste da altura da linha */
+      text-align: center;
+    }
+
+    .texto-direita p {
+      width: 420px; /* Ajuste da largura do parágrafo */
+      height: 160px; /* Ajuste da altura do parágrafo */
+      padding-top: 50px; /* Ajuste do preenchimento superior */
+      font-size: 22px; /* Ajuste do tamanho da fonte */
+      line-height: 34px; /* Ajuste da altura da linha */
+      text-align: center;
+    }
+
+    .sessao_3 .foto-direita button {
+      width: 270px; /* Ajuste da largura do botão */
+      height: 70px; /* Ajuste da altura do botão */
+      margin-top: 60px; /* Ajuste da margem superior */
+      font-size: 30px; /* Ajuste do tamanho da fonte */
+      line-height: 42px; /* Ajuste da altura da linha */
+    }
+
+    /* Estilos para o rodapé */
+    .footer h2 {
+      font-size: 100px; /* Ajuste do tamanho da fonte */
+      line-height: 100px; /* Ajuste da altura da linha */
+      text-align: center;
+    }
+
+    .footer {
+      background-color: rgba(232, 243, 227, 1);
+      padding-bottom: 50px; /* Ajuste do preenchimento inferior */
+    }
+
+    .footer_cards {
+      display: flex;
+      padding-top: 40px; /* Ajuste do preenchimento superior */
+      justify-content: center;
+      gap: 40px; /* Ajuste do espaço entre os cartões */
+    }
+
+    .footer_cards .titulo-card-footer {
+      font-size: 60px; /* Ajuste do tamanho da fonte */
+      line-height: 86px; /* Ajuste da altura da linha */
+    }
+
+    .footer_cards p {
+      font-size: 22px; /* Ajuste do tamanho da fonte */
+      line-height: 34px; /* Ajuste da altura da linha */
+    }
+
+    .footer_cards hr {
+      width: 80%; /* Ajuste da largura da linha */
+    }
+  }
+  @media (min-width: 1920px) {
+    /*Código aqui*/
+  }
 }
