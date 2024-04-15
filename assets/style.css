@@ -706,6 +706,7 @@ Body {
 
     /* Estilos para a primeira sessão */
     .sessao_1 {
+      width: 100%;
       background-color: #e8f3e3;
       display: flex;
       align-items: center;
@@ -713,12 +714,11 @@ Body {
     }
 
     .imagem img {
-      width: 580px;
-      padding: 52px 170px 30px 215px;
+      width: 10px;
     }
 
     .texto h1 {
-      font-size: 68px;
+      font-size: 32px;
       padding-bottom: 70px;
     }
 
